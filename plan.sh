@@ -15,13 +15,4 @@ pkg_include_dirs=(include)
 pkg_lib_dirs=(lib)
 pkg_interpreters=()
 
-do_build() {
-  ./configure --prefix=/usr --disable-static
-
-  make
-}
-
-do_check() {
-  make check
-}
 
